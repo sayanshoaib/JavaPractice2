@@ -14,27 +14,30 @@ public class Client {
 
         ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
         ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
-        while (true) {
-            Scanner sc = new Scanner(System.in);
+//        while (true) {
+//            Scanner sc = new Scanner(System.in);
+//
+//            String message = sc.nextLine();
+//
+//            if (message.equals("exit")) {
+//                break;
+//            }
+//
+//            // send to server...
+//            oos.writeObject(message);
+//
+//            try {
+//                // receive from server...
+//                Object fromServer = ois.readObject();
+//                System.out.println("From server: " + (String) fromServer);
+//            } catch (ClassNotFoundException e) {
+//                e.printStackTrace();
+//            }
+//        }
 
-            String message = sc.nextLine();
+        new WriterThread(oos, "Client1");
+        new ReaderThread(ois, "Client1");
 
-            if (message.equals("exit")) {
-                break;
-            }
-
-            // send to server...
-            oos.writeObject(message);
-
-            try {
-                // receive from server...
-                Object fromServer = ois.readObject();
-                System.out.println("From server: " + (String) fromServer);
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
-            }
-        }
-
-        socket.close();
+        //socket.close();
     }
 }
