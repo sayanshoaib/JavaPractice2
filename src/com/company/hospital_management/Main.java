@@ -99,7 +99,7 @@ public class Main {
         String adminName = sc.next();
         System.out.print("\nEnter the Password : ");
         String adminPassword = sc.next();
-        if(adminName.equalsIgnoreCase("siddesh")&&adminPassword.equals("1234")) {
+        if(adminName.equalsIgnoreCase("shoaib")&&adminPassword.equals("1234")) {
             return true;
         }
         return false;
@@ -111,7 +111,7 @@ public class Main {
         String staffName = sc.next();
         System.out.print("\nEnter the Password : ");
         String staffPassword = sc.next();
-        if(staffName.equalsIgnoreCase("siddesh")&&staffPassword.equals("1234")) {
+        if(staffName.equalsIgnoreCase("shoaib")&&staffPassword.equals("1234")) {
             return true;
         }
         return false;
@@ -123,7 +123,7 @@ public class Main {
         String hName = sc.next();
         System.out.print("\nEnter the Password : ");
         String hPassword = sc.next();
-        if(hName.equalsIgnoreCase("siddesh")&&hPassword.equals("1234")) {
+        if(hName.equalsIgnoreCase("shoaib")&&hPassword.equals("1234")) {
             return true;
         }
         return false;

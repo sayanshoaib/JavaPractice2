@@ -25,8 +25,8 @@ public class Hospital {
 
     /* Method to add hospital */
     public ArrayList<Hospital> addHospital() {
-        ar.add(new Hospital("Appollo","Baswangudi",9886481));
-        ar.add(new Hospital("KLE","Belgaum",8753729));
+        ar.add(new Hospital("Apollo","Gulshan",9886481));
+        ar.add(new Hospital("Square","Dhanmondi",8753729));
         return ar;
     }
 
