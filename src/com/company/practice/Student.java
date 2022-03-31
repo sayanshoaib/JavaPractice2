@@ -1,8 +1,9 @@
 package com.company.practice;
 
 public class Student {
-    String name;
-    int roll;
+    private String name;
+    private int roll;
+    private int balance = 1000;
 
     public String getName() {
         return name;
@@ -18,5 +19,18 @@ public class Student {
 
     public void setRoll(int roll) {
         this.roll = roll;
+    }
+
+    public int getBalance() {
+        return balance;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", roll=" + roll +
+                ", balance=" + balance +
+                '}';
     }
 }
