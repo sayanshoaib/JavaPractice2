@@ -2,7 +2,8 @@ package com.company.bazlur.java_date_time;
 
 import java.util.Date;
 
-public interface CurrentTime {
+@FunctionalInterface
+public interface SimpleDateFormat {
 
-    Date showCurrentTime()
+    String showSimpleDateFormat(Date now);
 }
